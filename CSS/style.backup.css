@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-weight: 800;
+    align-items: center;
+    padding: 70px 0;
+}
+
+#header-container{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#title{
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+#version{
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: -10px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#recommended{
+    font-size: 8px;
+    padding: 30px 71px;
+    border: 0.5px solid #000;
+    display: inline-block;
+}
+
+#recommended h1, a{
+    font-weight: 600;
+}
+
+#recommended > div{
+    display: inline-block;
+}
+
+#recommend-title{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0px 20px;
+    position: relative;
+    margin-left: -20px;
+}
+
+#recommended-files{
+    text-decoration: none;
+    color: #A71A40;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#title-container{
+    text-align: right;
+    margin-right: 20px;
+}
+
+#android-version-title{
+    margin-bottom: 20px;
+}
+
+#android-version{
+    margin-bottom: 20px;
+}
+
+#manual-select{
+    margin-top: 50px;
+    position: relative;
+}
+
+#version-selector{
+    border: 0.5px solid #000;
+    font-weight: 600;
+    padding: 20px 119px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+#version-selector:focus{
+    outline: 0;
+}
+
+#version-selector:hover{
+    background-color: #F6F7F9;
+}
+
+#version-selector:focus{
+    color: #A71A40;
+    background-color: #F6F7F9;
+}
+
+#chevron-down-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+#dropdown-container{
+    display: none;
+    position: absolute;
+    background-color: #F6F7F9;
+    z-index: 1;
+    overflow: auto;
+    max-height: 180px;
+}
+
+#dropdown-container a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 122px;
+    text-align: center;
+}
+
+.dropdown-container-show{
+    display: block !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#other-files{
+    margin-top: 50px;
+}
+
+#other{
+    padding: 18px 47px;
+    border: 0.5px solid #000;
+    display: inline-block;
+}
+
+#other a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline;
+}
+
+#other a:active{
+    color: #A71A40;
+}   
+
+#other-launchers{
+    margin: 0 50px
+}
+
+#other-title{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0px 20px;
+    position: relative;
+    margin-left: -20px;
+}
+
+#footer{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+#copyright{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+
+
+@media only screen and (min-width: 1024px){
+    #section-1, #section-2{
+        height:100vh;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+
+    #section-1{
+        left: 0;
+    }
+
+    #section-2{
+        right: 0;
+    }
+
+    #header{
+        margin-top: 25vh;
+        padding: 0;
+    }
+
+    #title{
+        font-size: 3.5em;
+    }
+    
+    #version{
+        font-weight: 700;
+        font-size: 1.2em;
+        margin-top: -10px;
+    }
+    
+
+    #container{
+        height: 100vh;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    body{
+        background-color: blue;
+    }
+}

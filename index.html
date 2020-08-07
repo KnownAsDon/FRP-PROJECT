@@ -1,35 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>FRP Project | Home</title>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div class="main">
-      <div class="header">
-        <h3>FRP PROJECT</h3>
-      </div>
-      <div class="container">
-        <table>
-          <tr class="table-header">
-            <th>
-              <h1>FRP FILES</h1>
-            </th>
-          </tr>
-          <tr><td><a href="frp-files.html">FRP</a></td></tr>
-          <tr><td><a href="launcher-files.html">Launchers</a></td></tr>
-          <tr><td><a href="gam-files.html">GAM</a></td></tr>
-          <tr><td><a href="shortcut-maker-files.html">Shortcut Makers</a></td></tr>
-          <tr><td><a href="settings-files.html">Settings</a></td></tr>
-          <tr><td><a href="other-files.html">Other</a></td></tr>
-        </table>
-      </div>
-      <div class="footer">
-        <p>Copyright &copy; Anaconda 2018</p>
-      </div>
+    <title>FRP PROJECT</title>
+    <link rel="icon" href="Resources/favicon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="section-1">
+            <div id="header">
+                <div id="header-container">
+                    <h1 id="title">FRP PROJECT</h1>
+                    <h3 id="version">v2.0</h3>
+                </div>
+            </div>
+            <div id="footer-desktop">
+                <h1 id="copyright-desktop">COPYRIGHT &copy ANACONDA 2020</h1>
+            </div>
+        </div>
+        <div id="section-2">
+            <div id="container">
+                <div id="recommended-container">
+                    <fieldset id="recommended">
+                        <legend id="recommend-title">RECOMMENDED</legend>
+                        <div id="title-container">
+                            <h1 id="android-version-title">Detected Android Version:</h1>
+                            <h1 id="recommended-files-title">Recommended files:</h1>
+                        </div>
+                        <div id="version-files-container">
+                            <h1 id="android-version">Null</h1>
+                            <a href="" id="recommended-files">Download</a>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="manual-select">
+                    <button onclick="displayAndroidVersions()" id="version-selector" class="version-selector">Select Android Version<img src="Resources/chevron-down-solid.svg" id="chevron-down-icon"></button>
+                    <div id="dropdown-container" class="dropdown-container">
+                        <a href="Files/android_versions/v10.zip" id="android-10">Android 10 (Q)</a>
+                        <a href="Files/android_versions/v9.zip" id="android-9">Android 9 (Pie)</a>
+                        <a href="Files/android_versions/v8.zip" id="android-8">Android 8 (Oreo)</a>
+                        <a href="Files/android_versions/v7.zip" id="android-7">Android 7 (Noughat)</a>
+                        <a href="Files/android_versions/v6.zip" id="android-6">Android 6 (Marshmellow)</a>
+                        <a href="Files/android_versions/v5.zip" id="android-5">Android 5 (Lollipop)</a>
+                    </div>
+                </div>
+                <div id="other-files">
+                    <fieldset id="other">
+                        <legend id="other-title">OTHER</legend>
+                        <div id="other-container">
+                            <a href="tools_page.html" id="other-tools">TOOLS</a>
+                            <a href="launchers_page.html" id="other-launchers">LAUNCHERS</a>
+                            <a href="fm_page.html" id="other-file-manager">FILE MANAGER</a>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="footer">
+                    <h1 id="copyright">COPYRIGHT &copy ANACONDA 2020</h1>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
