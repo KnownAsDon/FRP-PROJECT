@@ -277,7 +277,21 @@ body{
     border: none;
 }
 
+#js-link{
+    text-decoration: none;
+    width: 260px;
+    display: block;
+    background-color: #a71a40ea;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
 
+#js-link:hover{
+    background-color: #A71A40;
+}
 
 
 
@@ -441,5 +455,12 @@ body{
     
     #file-manager-title{
         padding: 15px 20px 15px 120px;
+    }
+
+    #js-link{
+        text-decoration: none;
+        width: 437px;
+        font-size: 16px;
+        color: #fff;
     }
 }
