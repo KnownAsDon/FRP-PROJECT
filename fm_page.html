@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRP PROJECT</title>
+    <title>File Manager</title>
     <link rel="icon" href="Resources/favicon.ico">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/fm_style.css">
     <script src="JS/script.js"></script>
 </head>
 <body>
     <div id="main">
         <div id="section-1">
             <div id="header">
-                <div id="header-container">
-                    <h1 id="title">FRP PROJECT</h1>
-                    <h3 id="version">v2.0</h3>
-                </div>
+                <div id="title" class="fm-title">File Manager</div>
             </div>
             <div id="footer-desktop">
                 <h1 id="copyright-desktop">COPYRIGHT &copy ANACONDA 2020</h1>
@@ -23,44 +21,74 @@
         </div>
         <div id="section-2">
             <div id="container">
-                <div id="file-manager-container">
-                    <table id="file-manager">
-                        <tr>
-                            <th id="file-manager-redirect"><a href="index.html">HOME</a></th>
-                            <th id="file-manager-title">FILE MANAGER</th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_page.html'" colspan="2"><a href="fm_page.html">..</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_frp_page.html'" colspan="2"><a href="fm_pages/fm_frp_page.html">FRP</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_launchers_page.html'" colspan="2"><a href="fm_pages/fm_launchers_page.html">Lauchers</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_gam_page.html'" colspan="2"><a href="fm_pages/fm_gam_page.html">GAM</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_shortcut_page.html'" colspan="2"><a href="fm_pages/fm_shortcut_page.html">Shortcut</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_settings_page.html'" colspan="2"><a href="fm_pages/fm_settings_page.html">Settings</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_samsung_page.html'" colspan="2"><a href="fm_pages/fm_samsung_page.html">Samsung</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_huawei_page.html'" colspan="2"><a href="fm_pages/fm_huawei_page.html">Huawei</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href='fm_pages/fm_other_page.html'" colspan="2"><a href="fm_pages/fm_other_page.html">Other</a></th>
-                        </tr>
-                    </table>    
+                <div id="fm-container">
+                    <div id="home-container" class="fm-item-container">
+                        <a href="index.html" id="home-container-title">Home</a>
+                    </div>
+                    <div id="frp-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/frp/frp-login.apk">FRP Login</a></li>
+                        </ul>
+                        <h1>FRP</h1>
+                    </div>
+                    <div id="launchers-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/launchers/apex-launcher.apk">Apex Launcher</a></li>
+                            <li><a href="Files/launchers/go-launcher.apk">Go Launcher</a></li>
+                            <li><a href="Files/launchers/nova-launcher.apk">Nova Launcher</a></li>
+                        </ul>
+                        <h1>Launchers</h1>
+                    </div>
+                    <div id="gam-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/gam/gam-5.apk">Google Account Manager 5</a></li>
+                            <li><a href="Files/gam/gam-6.apk">Google Account Manager 6</a></li>
+                        </ul>
+                        <h1>GAM</h1>
+                    </div>
+                    <div id="shortcut-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/shortcut/quick-shortcut-maker.apk">Quick Shortcut Maker</a></li>
+                            <li><a href="Files/shortcut/shortcut-master-lite.apk">Shortcut Master Lite</a></li>
+                        </ul>
+                        <h1>Shortcut</h1>
+                    </div>
+                    <div id="settings-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/settings/settings.apk">Settings</a></li>
+                            <li><a href="Files/settings/developer-settings.apk">Developer Settings</a></li>
+                        </ul>
+                        <h1>Settings</h1>
+                    </div>
+                    <div id="samsung-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/samsung/hushsms.apk">HushSMS</a></li>
+                            <li><a href="Files/samsung/smart_switch_mobile.apk">Smart Switch Mobile</a></li>
+                        </ul>
+                        <h1>Samsung</h1>
+                    </div>
+                    <div id="huawei-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/huawei/phone-clone.apk">Phone Clone</a></li>
+                            <li><a href="Files/huawei/file_commander_manager.apk">File Commander</a></li>
+                        </ul>
+                        <h1>Huawei</h1>
+                    </div>
+                    <div id="other-container" class="fm-item-container">
+                        <ul>
+                            <li><a href="Files/other/drparser-mode.apk">DRParser Mode</a></li>
+                            <li><a href="Files/other/es-file-explorer.apk">ES File Explorer</a></li>
+                            <li><a href="Files/other/gps.apk">Google Play Services</a></li>
+                            <li><a href="Files/other/menu-button.apk">Menu Button</a></li>
+                            <li><a href="Files/other/sidebar.apk">Sidebar</a></li>
+                            <li><a href="Files/other/testdpc.apk">TestDPC</a></li>
+                        </ul>
+                        <h1>Other</h1>
+                    </div>
                 </div>
                 <div id="footer">
                     <h1 id="copyright">COPYRIGHT &copy ANACONDA 2020</h1>
-                </div>
+                </div> 
             </div>
         </div>
     </div>

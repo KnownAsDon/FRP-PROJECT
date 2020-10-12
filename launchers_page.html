@@ -6,6 +6,7 @@
     <title>FRP PROJECT</title>
     <link rel="icon" href="Resources/favicon.ico">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/fm_style.css">
     <script src="JS/script.js"></script>
 </head>
 <body>
@@ -23,22 +24,16 @@
         </div>
         <div id="section-2">
             <div id="container">
-                <div id="file-manager-container">
-                    <table id="file-manager">
-                        <tr>
-                            <th id="file-manager-redirect"><a href="index.html">HOME</a></th>
-                            <th id="file-manager-title">Launchers</th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href=''" colspan="2"><a href="intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end">Open Google Search</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href=''" colspan="2"><a href="intent://com.android.settings/#Intent;scheme=android-app;end">Open Settings</a></th>
-                        </tr>
-                        <tr>
-                            <td onclick="location.href=''" colspan="2"><a href="intent://com.sika524.android.quickshortcut/#Intent;scheme=android-app;end">Open Quick Shortcut Maker</a></th>
-                        </tr>
-                    </table>    
+                <div id="home-container" class="fm-item-container">
+                    <a href="index.html" id="home-container-title">Home</a>
+                </div>
+                <div id="frp-container" class="fm-item-container">
+                    <ul>
+                        <li><a href="intent://com.google.android.googlequicksearchbox/#Intent;scheme=android-app;end">Open Google Search</a></li>
+                        <li><a href="intent://com.android.settings/#Intent;scheme=android-app;end">Open Settings</a></li>
+                        <li><a href="intent://com.sika524.android.quickshortcut/#Intent;scheme=android-app;end">Open Quick Shortcut Maker</a></li>
+                    </ul>
+                    <h1>App Launchers</h1>
                 </div>
                 <div id="footer">
                     <h1 id="copyright">COPYRIGHT &copy ANACONDA 2020</h1>
