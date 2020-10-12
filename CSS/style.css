@@ -191,7 +191,7 @@ body{
 }
 
 #other{
-    padding: 18px 23px;
+    padding: 18px 16px;
     border: 0.5px solid #000;
     display: inline-block;
 }
@@ -209,7 +209,7 @@ body{
 }   
 
 #other-launchers{
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 #other-title{
@@ -428,7 +428,7 @@ body{
     }
 
     #other{
-        padding: 18px 47px;
+        padding: 18px 43px;
     }
     
     #other a{
@@ -436,7 +436,7 @@ body{
      }
 
      #other-launchers{
-        margin: 0 50px
+        margin: 0 40px
     }
 
     #other-title{
